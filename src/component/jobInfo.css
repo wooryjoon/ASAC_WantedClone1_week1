@@ -1,0 +1,27 @@
+.jobInfo {
+  margin: 40px 0;
+  width: 90%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.jobInfo_child {
+  border: 1px solid lightgray;
+  border-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+#jobInfo_last {
+  border-right: 1px solid lightgray;
+}
+.jobInfo_child a {
+  display: block;
+  margin: 10px 5px 0 0;
+}
+.fa-chevron-right {
+  font-size: 14px;
+}

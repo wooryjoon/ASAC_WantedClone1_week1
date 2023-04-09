@@ -1,0 +1,82 @@
+.eventSlide-container {
+  width: 90%; /* 1080px*/
+  position: relative;
+  height: 450px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.eventSlide {
+  position: absolute;
+  display: flex;
+  transition: all 0.4s;
+}
+.eventSlide_child {
+  width: 520px;
+  height: 400px;
+  margin-left: 40px;
+  position: relative;
+}
+.eventSlide :first-child {
+  margin-left: 0px;
+}
+
+.eventSlide img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.evenSlide_child_text {
+  padding: 15px 5px;
+}
+.evenSlide_child_text :first-child {
+  border: 1px solid orange;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 2px 5px;
+  color: orange;
+  font-weight: bold;
+}
+.evenSlide_child_text :nth-child(2) {
+  margin: 15px 0;
+  font-weight: bold;
+  opacity: 0.8;
+}
+.last img {
+  filter: opacity(10%);
+}
+.last #theLast {
+  opacity: 0.1;
+}
+.lastMark {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+  left: 200px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.lastMark a {
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  margin-right: 7px;
+}
+/*
+1. 버튼을 누르면, eventSlide의 left가 container의 width만큼 이동
+2. 
+
+*/

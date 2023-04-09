@@ -1,0 +1,20 @@
+.commentModalToggle {
+  cursor: pointer;
+}
+.commentModal {
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid lightgray;
+  visibility: hidden;
+  position: absolute;
+  left: -15%;
+  top: 50px;
+  z-index: 3;
+  font-size: 16px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 160%;
+}
