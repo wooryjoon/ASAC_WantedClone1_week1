@@ -1,0 +1,39 @@
+.loading-container {
+  position: relative;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-container.loading {
+  display: none;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerBox {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  border-top-color: #f19022;
+  border-bottom-color: #f19022;
+  animation: spinner 0.8s ease infinite;
+}

@@ -9,8 +9,9 @@
 @import "./component/headerModal.css";
 @import "./component/commentModal.css";
 @import "./component/sideCard.css";
+@import "./component/loginModal.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
-
+@import "./component/loading.css";
 html {
   font-family: "Noto Sans KR", sans-serif;
   --main-color: rgba(0, 0, 0, 0.8);
@@ -39,6 +40,9 @@ button {
   font-weight: bold;
   font-size: 22px;
   /* opacity: 0.8; */
+}
+section.loading {
+  display: none;
 }
 main {
   width: 1200px;

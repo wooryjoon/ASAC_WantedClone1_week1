@@ -31,810 +31,879 @@ https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css
     <script src="./js/eventSlide.js" defer></script>
     <script src="./js/headerModal.js" defer></script>
     <script src="./js/commentModal.js" defer></script>
+    <script src="./js/loginModal.js" defer></script>
+    <script src="./js/loading.js" defer></script>
     <!-- <script src="app.js" defer type="module"></script> -->
   </head>
   <body>
-    <!-- Header -->
-    <header class="header_wrap">
-      <nav class="header">
-        <div class="moreMenu">
-          <ul class="menu_container">
-            <a href="" class="menu_child">직군 전체</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">2</a>
-              <a href="" class="menu_child_detail">2</a>
-              <a href="" class="menu_child_detail">2</a>
-              <a href="" class="menu_child_detail">2</a>
-              <a href="" class="menu_child_detail">2</a>
-              <a href="" class="menu_child_detail">2</a>
-            </div>
-            <a href="" class="menu_child">개발</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">백엔드</a>
-              <a href="" class="menu_child_detail">프론트엔드</a>
-              <a href="" class="menu_child_detail">데브옵스</a>
-              <a href="" class="menu_child_detail">클라우드</a>
-              <a href="" class="menu_child_detail">IOS</a>
-              <a href="" class="menu_child_detail">안드로이드</a>
-            </div>
-            <a href="" class="menu_child">경영 | 비즈니스</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">경영</a>
-              <a href="" class="menu_child_detail">비즈니스</a>
-              <a href="" class="menu_child_detail">PM | PO</a>
-              <a href="" class="menu_child_detail">경영지원</a>
-              <a href="" class="menu_child_detail">운영 매니저</a>
-              <a href="" class="menu_child_detail">경제학</a>
-            </div>
-            <a href="" class="menu_child">마케팅 | 광고</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">데이터분석</a>
-              <a href="" class="menu_child_detail">마케터</a>
-              <a href="" class="menu_child_detail">MD</a>
-              <a href="" class="menu_child_detail">몰라</a>
-            </div>
-            <a href="" class="menu_child">디자인</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">웹디자이너</a>
-              <a href="" class="menu_child_detail">의상디자이너</a>
-              <a href="" class="menu_child_detail">그냥디자이너</a>
-              <a href="" class="menu_child_detail">클라우드맥주</a>
-              <a href="" class="menu_child_detail">으라차</a>
-            </div>
-            <a href="" class="menu_child">영업</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">기업영업</a>
-              <a href="" class="menu_child_detail">외부영업</a>
-              <a href="" class="menu_child_detail">해외영업</a>
-              <a href="" class="menu_child_detail">내부영업</a>
-              <a href="" class="menu_child_detail">영업사원</a>
-              <a href="" class="menu_child_detail">맥주영업</a>
-            </div>
-            <a href="" class="menu_child">게임 제작</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">롤</a>
-              <a href="" class="menu_child_detail">서든어택</a>
-              <a href="" class="menu_child_detail">스타크래프트</a>
-              <a href="" class="menu_child_detail">워크래프트</a>
-              <a href="" class="menu_child_detail">몰라요</a>
-              <a href="" class="menu_child_detail">끝</a>
-            </div>
-            <a href="" class="menu_child">미디어</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">백엔드</a>
-              <a href="" class="menu_child_detail">프론트엔드</a>
-              <a href="" class="menu_child_detail">데브옵스</a>
-              <a href="" class="menu_child_detail">클라우드</a>
-              <a href="" class="menu_child_detail">맥주</a>
-              <a href="" class="menu_child_detail">2</a>
-            </div>
-            <a href="" class="menu_child">HR</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">HR</a>
-              <a href="" class="menu_child_detail">HR</a>
-              <a href="" class="menu_child_detail">HR</a>
-              <a href="" class="menu_child_detail">HR</a>
-              <a href="" class="menu_child_detail">HR</a>
-              <a href="" class="menu_child_detail">HR</a>
-            </div>
-            <a href="" class="menu_child">ASAC</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">ASAC</a>
-              <a href="" class="menu_child_detail">ASAC</a>
-              <a href="" class="menu_child_detail">ASAC</a>
-              <a href="" class="menu_child_detail">ASAC</a>
-              <a href="" class="menu_child_detail">ASAC</a>
-              <a href="" class="menu_child_detail">ASAC</a>
-            </div>
-            <a href="" class="menu_child">컴공선배</a>
-            <div class="menu_child_detail_container">
-              <a href="" class="menu_child_detail">컴공선배</a>
-              <a href="" class="menu_child_detail">컴공선배</a>
-              <a href="" class="menu_child_detail">컴공선배</a>
-              <a href="" class="menu_child_detail">컴공선배</a>
-              <a href="" class="menu_child_detail">컴공선배</a>
-              <a href="" class="menu_child_detail">컴공선배</a>
-            </div>
-          </ul>
-        </div>
-        <div class="logo">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=17&q=75"
-            alt=""
-            class="logo_menu"
-            id="headerModal"
-          />
-          <a href="/"
-            ><img
-              src="https://www.wantedlab.com/img/logo.png"
-              alt=""
-              class="logo_img"
-          /></a>
-        </div>
-        <div class="navBar">
-          <a href="" class="navBar-menu"> 채용 </a>
-          <a href="" class="navBar-menu"> 이벤트 </a>
-          <a href="" class="navBar-menu"> 직군별 연봉 </a>
-          <a href="" class="navBar-menu"> 이력서 </a>
-          <a href="" class="navBar-menu">
-            커뮤니티
-            <span class="header_addText1">New</span>
-          </a>
-          <a href="" class="navBar-menu"> 프리랜서 </a>
-          <a href="" class="navBar-menu">
-            AI 합격예측 <span class="header_addText2">Beta</span>
-          </a>
-        </div>
-        <div class="option">
-          <div class="option_wrap1">
-            <button class="option_search">
-              <i class="fa solid fa-magnifying-glass fa-lg"></i>
-            </button>
-            <button class="option_news">
-              <i class="fa-regular fa-bell fa-lg"></i>
-            </button>
-            <button class="option_user">
-              <i class="fa-regular fa-user fa-lg"></i>
-            </button>
-          </div>
-          <div class="header_ghost"></div>
-          <a class="option_wrap2" href="/"> <span>기업 서비스</span> </a>
-        </div>
-      </nav>
-    </header>
-    <!-- slides -->
-    <div class="slide-wrapper">
-      <button class="carousel_prevBtn">
-        <i class="fa-solid fa-angle-left"></i>
-      </button>
-      <button class="carousel_nextBtn">
-        <i class="fa-solid fa-angle-right"></i>
-      </button>
-      <div class="slides">
-        <div class="slide">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1990%2F78f46d5b.jpg&w=1060&q=100"
-            alt=""
-          />
-          <div class="slide_card">
-            <div class="slide_card_text">
-              <h1>HR 업무, 이게 최선일까?</h1>
-              <span>[무료 웨비나] SaaS를 활용한 생산성 높이기</span>
-            </div>
-            <a href="/" class="slide_card_link">바로가기 ></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1940%2F4a485a58.jpg&w=1060&q=100"
-            alt=""
-          />
-          <div class="slide_card">
-            <div class="slide_card_text">
-              <h1>직장인 유형 테스트</h1>
-              <span>회사를 고를 때, 나는 어떤 유형일까요?</span>
-            </div>
-            <a href="/" class="slide_card_link">바로가기 ></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1993%2F16ebbe65.jpg&w=1060&q=100"
-            alt=""
-          />
-          <div class="slide_card">
-            <div class="slide_card_text">
-              <h1>프리온보딩 프론트엔드 인턴십 (4월)</h1>
-              <span>기업이 원하는 진짜 주니어</span>
-            </div>
-            <a href="/" class="slide_card_link">바로가기 ></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1791%2F19d8e5bf.jpg&w=1060&q=100"
-            alt=""
-          />
-          <div class="slide_card">
-            <div class="slide_card_text">
-              <h1>우리 회사를 소개합니다.</h1>
-              <span>'회사'에 대한 정보, 원티드가 찾아드릴게요!</span>
-            </div>
-            <a href="/" class="slide_card_link">바로가기 ></a>
-          </div>
-        </div>
-        <div class="slide">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1958%2Fb670c991.jpg&w=1060&q=100"
-            alt=""
-          />
-          <div class="slide_card">
-            <div class="slide_card_text">
-              <h1>IT 세일즈 리드 현직자 인터뷰</h1>
-              <span>슬랙,마이크로소프트,한국신용데이터,채널톡</span>
-            </div>
-            <a href="/" class="slide_card_link">바로가기 ></a>
-          </div>
-        </div>
-      </div>
+    <div class="loading-container">
+      <div class="spinnerBox"></div>
     </div>
-    <!-- main -->
-    <main>
-      <div class="comment">
-        나에게 필요한 커리어 인사이트
-        <i
-          class="fa-solid fa-question commentModalToggle"
-          style="color: skyblue"
-        >
-        </i>
-        <div class="commentModal">
-          커리어 인사이트, 이제 따로 찾지 말고 원티드에서 만나보세요! 검증된
-          IT업계 전문가들이 다양한 채널에서 생산하는 커리어 콘텐츠를 선별해서
-          관심 태그 기반으로 제공해 드립니다.
+    <section class="loading">
+      <!-- Header -->
+      <header class="header_wrap">
+        <nav class="header">
+          <div class="moreMenu">
+            <ul class="menu_container">
+              <a href="" class="menu_child">직군 전체</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">2</a>
+                <a href="" class="menu_child_detail">2</a>
+                <a href="" class="menu_child_detail">2</a>
+                <a href="" class="menu_child_detail">2</a>
+                <a href="" class="menu_child_detail">2</a>
+                <a href="" class="menu_child_detail">2</a>
+              </div>
+              <a href="" class="menu_child">개발</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">백엔드</a>
+                <a href="" class="menu_child_detail">프론트엔드</a>
+                <a href="" class="menu_child_detail">데브옵스</a>
+                <a href="" class="menu_child_detail">클라우드</a>
+                <a href="" class="menu_child_detail">IOS</a>
+                <a href="" class="menu_child_detail">안드로이드</a>
+              </div>
+              <a href="" class="menu_child">경영 | 비즈니스</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">경영</a>
+                <a href="" class="menu_child_detail">비즈니스</a>
+                <a href="" class="menu_child_detail">PM | PO</a>
+                <a href="" class="menu_child_detail">경영지원</a>
+                <a href="" class="menu_child_detail">운영 매니저</a>
+                <a href="" class="menu_child_detail">경제학</a>
+              </div>
+              <a href="" class="menu_child">마케팅 | 광고</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">데이터분석</a>
+                <a href="" class="menu_child_detail">마케터</a>
+                <a href="" class="menu_child_detail">MD</a>
+                <a href="" class="menu_child_detail">몰라</a>
+              </div>
+              <a href="" class="menu_child">디자인</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">웹디자이너</a>
+                <a href="" class="menu_child_detail">의상디자이너</a>
+                <a href="" class="menu_child_detail">그냥디자이너</a>
+                <a href="" class="menu_child_detail">클라우드맥주</a>
+                <a href="" class="menu_child_detail">으라차</a>
+              </div>
+              <a href="" class="menu_child">영업</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">기업영업</a>
+                <a href="" class="menu_child_detail">외부영업</a>
+                <a href="" class="menu_child_detail">해외영업</a>
+                <a href="" class="menu_child_detail">내부영업</a>
+                <a href="" class="menu_child_detail">영업사원</a>
+                <a href="" class="menu_child_detail">맥주영업</a>
+              </div>
+              <a href="" class="menu_child">게임 제작</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">롤</a>
+                <a href="" class="menu_child_detail">서든어택</a>
+                <a href="" class="menu_child_detail">스타크래프트</a>
+                <a href="" class="menu_child_detail">워크래프트</a>
+                <a href="" class="menu_child_detail">몰라요</a>
+                <a href="" class="menu_child_detail">끝</a>
+              </div>
+              <a href="" class="menu_child">미디어</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">백엔드</a>
+                <a href="" class="menu_child_detail">프론트엔드</a>
+                <a href="" class="menu_child_detail">데브옵스</a>
+                <a href="" class="menu_child_detail">클라우드</a>
+                <a href="" class="menu_child_detail">맥주</a>
+                <a href="" class="menu_child_detail">2</a>
+              </div>
+              <a href="" class="menu_child">HR</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">HR</a>
+                <a href="" class="menu_child_detail">HR</a>
+                <a href="" class="menu_child_detail">HR</a>
+                <a href="" class="menu_child_detail">HR</a>
+                <a href="" class="menu_child_detail">HR</a>
+                <a href="" class="menu_child_detail">HR</a>
+              </div>
+              <a href="" class="menu_child">ASAC</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">ASAC</a>
+                <a href="" class="menu_child_detail">ASAC</a>
+                <a href="" class="menu_child_detail">ASAC</a>
+                <a href="" class="menu_child_detail">ASAC</a>
+                <a href="" class="menu_child_detail">ASAC</a>
+                <a href="" class="menu_child_detail">ASAC</a>
+              </div>
+              <a href="" class="menu_child">컴공선배</a>
+              <div class="menu_child_detail_container">
+                <a href="" class="menu_child_detail">컴공선배</a>
+                <a href="" class="menu_child_detail">컴공선배</a>
+                <a href="" class="menu_child_detail">컴공선배</a>
+                <a href="" class="menu_child_detail">컴공선배</a>
+                <a href="" class="menu_child_detail">컴공선배</a>
+                <a href="" class="menu_child_detail">컴공선배</a>
+              </div>
+            </ul>
+          </div>
+          <div class="logo">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&w=17&q=75"
+              alt=""
+              class="logo_menu"
+              id="headerModal"
+            />
+            <a href="/"
+              ><img
+                src="https://www.wantedlab.com/img/logo.png"
+                alt=""
+                class="logo_img"
+            /></a>
+          </div>
+          <div class="navBar">
+            <a href="" class="navBar-menu"> 채용 </a>
+            <a href="" class="navBar-menu"> 이벤트 </a>
+            <a href="" class="navBar-menu"> 직군별 연봉 </a>
+            <a href="" class="navBar-menu"> 이력서 </a>
+            <a href="" class="navBar-menu">
+              커뮤니티
+              <span class="header_addText1">New</span>
+            </a>
+            <a href="" class="navBar-menu"> 프리랜서 </a>
+            <a href="" class="navBar-menu">
+              AI 합격예측 <span class="header_addText2">Beta</span>
+            </a>
+          </div>
+          <div class="option">
+            <div class="option_wrap1">
+              <div class="login">
+                <button>회원가입/로그인</button>
+              </div>
+            </div>
+            <div class="header_ghost"></div>
+            <a class="option_wrap2" href="/"> <span>기업 서비스</span> </a>
+          </div>
+        </nav>
+      </header>
+      <!-- slides -->
+
+      <div class="slide-wrapper">
+        <button class="carousel_prevBtn">
+          <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button class="carousel_nextBtn">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <div class="slides">
+          <div class="slide">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1990%2F78f46d5b.jpg&w=1060&q=100"
+              alt=""
+            />
+            <div class="slide_card">
+              <div class="slide_card_text">
+                <h1>HR 업무, 이게 최선일까?</h1>
+                <span>[무료 웨비나] SaaS를 활용한 생산성 높이기</span>
+              </div>
+              <a href="/" class="slide_card_link">바로가기 ></a>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1940%2F4a485a58.jpg&w=1060&q=100"
+              alt=""
+            />
+            <div class="slide_card">
+              <div class="slide_card_text">
+                <h1>직장인 유형 테스트</h1>
+                <span>회사를 고를 때, 나는 어떤 유형일까요?</span>
+              </div>
+              <a href="/" class="slide_card_link">바로가기 ></a>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1993%2F16ebbe65.jpg&w=1060&q=100"
+              alt=""
+            />
+            <div class="slide_card">
+              <div class="slide_card_text">
+                <h1>프리온보딩 프론트엔드 인턴십 (4월)</h1>
+                <span>기업이 원하는 진짜 주니어</span>
+              </div>
+              <a href="/" class="slide_card_link">바로가기 ></a>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1791%2F19d8e5bf.jpg&w=1060&q=100"
+              alt=""
+            />
+            <div class="slide_card">
+              <div class="slide_card_text">
+                <h1>우리 회사를 소개합니다.</h1>
+                <span>'회사'에 대한 정보, 원티드가 찾아드릴게요!</span>
+              </div>
+              <a href="/" class="slide_card_link">바로가기 ></a>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1958%2Fb670c991.jpg&w=1060&q=100"
+              alt=""
+            />
+            <div class="slide_card">
+              <div class="slide_card_text">
+                <h1>IT 세일즈 리드 현직자 인터뷰</h1>
+                <span>슬랙,마이크로소프트,한국신용데이터,채널톡</span>
+              </div>
+              <a href="/" class="slide_card_link">바로가기 ></a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- TagSlide -->
-      <div class="tagSlide">
-        <div class="tagSlideBtn_wrap left">
-          <button class="tagSlide_prevBtn">
-            <i class="fa-solid fa-angle-left"></i>
+      <!-- main -->
+      <main>
+        <div class="comment">
+          나에게 필요한 커리어 인사이트
+          <i
+            class="fa-solid fa-question commentModalToggle"
+            style="color: skyblue"
+          >
+          </i>
+          <div class="commentModal">
+            커리어 인사이트, 이제 따로 찾지 말고 원티드에서 만나보세요! 검증된
+            IT업계 전문가들이 다양한 채널에서 생산하는 커리어 콘텐츠를 선별해서
+            관심 태그 기반으로 제공해 드립니다.
+          </div>
+        </div>
+        <!-- TagSlide -->
+        <div class="tagSlide">
+          <div class="tagSlideBtn_wrap left">
+            <button class="tagSlide_prevBtn">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+          </div>
+
+          <div class="tagSlide-wrapper">
+            <ul class="tagSlide-container">
+              <li class="tagSlide_child">조직문화</li>
+              <li class="tagSlide_child">디자인</li>
+              <li class="tagSlide_child">노무</li>
+              <li class="tagSlide_child">인간관계</li>
+              <li class="tagSlide_child">라이프스타일</li>
+              <li class="tagSlide_child">콘텐츠제작</li>
+              <li class="tagSlide_child">리더십</li>
+              <li class="tagSlide_child">경영/전략</li>
+              <li class="tagSlide_child">브랜딩</li>
+              <li class="tagSlide_child">커리어고민</li>
+              <li class="tagSlide_child">데이터</li>
+              <li class="tagSlide_child">UI/UX</li>
+              <li class="tagSlide_child">서비스기획</li>
+              <li class="tagSlide_child">회사생활</li>
+              <li class="tagSlide_child">마케팅</li>
+              <li class="tagSlide_child">HR</li>
+              <li class="tagSlide_child">MD</li>
+              <li class="tagSlide_child">개발</li>
+              <li class="tagSlide_child">ASAC</li>
+              <li class="tagSlide_child">컴공선배</li>
+            </ul>
+          </div>
+          <div class="tagSlideBtn_wrap right">
+            <button class="tagSlide_nextBtn">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+          <button class="tagSlide_option">
+            <i class="fa-solid fa-ellipsis"></i>
           </button>
         </div>
-
-        <div class="tagSlide-wrapper">
-          <ul class="tagSlide-container">
-            <li class="tagSlide_child">조직문화</li>
-            <li class="tagSlide_child">디자인</li>
-            <li class="tagSlide_child">노무</li>
-            <li class="tagSlide_child">인간관계</li>
-            <li class="tagSlide_child">라이프스타일</li>
-            <li class="tagSlide_child">콘텐츠제작</li>
-            <li class="tagSlide_child">리더십</li>
-            <li class="tagSlide_child">경영/전략</li>
-            <li class="tagSlide_child">브랜딩</li>
-            <li class="tagSlide_child">커리어고민</li>
-            <li class="tagSlide_child">데이터</li>
-            <li class="tagSlide_child">UI/UX</li>
-            <li class="tagSlide_child">서비스기획</li>
-            <li class="tagSlide_child">회사생활</li>
-            <li class="tagSlide_child">마케팅</li>
-            <li class="tagSlide_child">HR</li>
-            <li class="tagSlide_child">MD</li>
-            <li class="tagSlide_child">개발</li>
-            <li class="tagSlide_child">ASAC</li>
-            <li class="tagSlide_child">컴공선배</li>
-          </ul>
+        <!-- Cards -->
+        <div class="card_container">
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210308%2F4%2F00307525.jpg&w=750&q=100"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=750&q=100"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210811%2F1%2F01781170.jpg&w=750&q=100"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fstatic%2Ficon%2Fios%2Ficon152.png&w=140&q=75"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZ9w__a9pmYA%2Fhqdefault.jpg%3Fsqp%3D-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg%3D%3D%26rs%3DAOn4CLB8Pqo8nM0tEwGdyVH1fgVf4SYJeA&w=750&q=100"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2328%2Fbc433b89.jpg&w=1200&q=90"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210907%2F8%2F48020790.jpg&w=750&q=100"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2202%2F6178453f.jpg&w=1200&q=90"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2Fdjzp%2Fimage%2F4mP49f5dfYOXnzgDTF60yAgYDCc.png&w=750&q=100"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F1849%2F4a06b7a1.jpg&w=1200&q=90"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F1898%2F3a398d10.jpg&w=1200&q=90"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
+          <a href="" class="cards">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2126%2Fff86edbf.jpg&w=1200&q=90"
+              alt=""
+            />
+            <div class="cards_text">
+              <h1>
+                서류전형, 실제로 그러할까? - <br />
+                임휘진
+              </h1>
+              <small
+                >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
+                노하우들...커리어를...</small
+              >
+              <span>
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                  alt=""
+                />
+                <h3>Wanted</h3>
+              </span>
+            </div>
+          </a>
         </div>
-        <div class="tagSlideBtn_wrap right">
-          <button class="tagSlide_nextBtn">
+        <div class="morePageToggle">
+          <a href="/" style="font-weight: bold">더 많은 콘텐츠 보기</a>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <!-- Banner1 -->
+        <button class="banner1">
+          <div>
+            <strong>내 유형과 가장 어울리는 회사는?</strong>
+            <br />
+            <small>유형테스트 하러가기</small>
+          </div>
+        </button>
+        <div class="ghostLine"></div>
+        <!-- Banner2 -->
+        <button class="banner2">
+          관심 태그를 설정하면 취향에 맞는 콘텐츠를 추천해 드려요.
+        </button>
+        <!-- Banner3 -->
+        <div class="banner3">
+          <button class="banner_prevBtn">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <div class="banner3_text">
+            <span>커리어 성장을 위한 맞춤 이벤트</span> <br />
+            <a href="/"
+              >이벤트 전체보기<i
+                class="fa-solid fa-angle-right"
+                style="margin-left: 3px; margin-top: 1px"
+              ></i
+            ></a>
+          </div>
+          <button class="banner_nextBtn">
             <i class="fa-solid fa-angle-right"></i>
           </button>
         </div>
-
-        <button class="tagSlide_option">
-          <i class="fa-solid fa-ellipsis"></i>
-        </button>
-      </div>
-      <!-- Cards -->
-      <div class="card_container">
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210308%2F4%2F00307525.jpg&w=750&q=100"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
+        <!-- EventSlide -->
+        <div class="eventSlide-container">
+          <div class="eventSlide">
+            <div class="eventSlide_child">
               <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2774%2F420d6a40.jpg&w=1200&q=100"
                 alt=""
               />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20211124%2F7%2F27374484.jpg&w=750&q=100"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210811%2F1%2F01781170.jpg&w=750&q=100"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fstatic%2Ficon%2Fios%2Ficon152.png&w=140&q=75"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fi.ytimg.com%2Fvi%2FZ9w__a9pmYA%2Fhqdefault.jpg%3Fsqp%3D-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg%3D%3D%26rs%3DAOn4CLB8Pqo8nM0tEwGdyVH1fgVf4SYJeA&w=750&q=100"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2328%2Fbc433b89.jpg&w=1200&q=90"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted.video.kr.kollus.com%2Fkr%2Fsnapshot%2Fwanted%2F20210907%2F8%2F48020790.jpg&w=750&q=100"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2202%2F6178453f.jpg&w=1200&q=90"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=http%3A%2F%2Ft1.daumcdn.net%2Fbrunch%2Fservice%2Fuser%2Fdjzp%2Fimage%2F4mP49f5dfYOXnzgDTF60yAgYDCc.png&w=750&q=100"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F1849%2F4a06b7a1.jpg&w=1200&q=90"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F1898%2F3a398d10.jpg&w=1200&q=90"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-        <a href="" class="cards">
-          <img
-            src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2126%2Fff86edbf.jpg&w=1200&q=90"
-            alt=""
-          />
-          <div class="cards_text">
-            <h1>
-              서류전형, 실제로 그러할까? - <br />
-              임휘진
-            </h1>
-            <small
-              >머리로는 이해했지만, 막상 활용하기에는 어려웠던 이력서 작성
-              노하우들...커리어를...</small
-            >
-            <span>
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&w=60&q=90"
-                alt=""
-              />
-              <h3>Wanted</h3>
-            </span>
-          </div>
-        </a>
-      </div>
-      <div class="morePageToggle">
-        <a href="/" style="font-weight: bold">더 많은 콘텐츠 보기</a>
-        <i class="fa-solid fa-angle-down"></i>
-      </div>
-      <!-- Banner1 -->
-      <button class="banner1">
-        <div>
-          <strong>내 유형과 가장 어울리는 회사는?</strong>
-          <br />
-          <small>유형테스트 하러가기</small>
-        </div>
-      </button>
-      <div class="ghostLine"></div>
-      <!-- Banner2 -->
-      <button class="banner2">
-        관심 태그를 설정하면 취향에 맞는 콘텐츠를 추천해 드려요.
-      </button>
-      <!-- Banner3 -->
-      <div class="banner3">
-        <button class="banner_prevBtn">
-          <i class="fa-solid fa-angle-left"></i>
-        </button>
-        <div class="banner3_text">
-          <span>커리어 성장을 위한 맞춤 이벤트</span> <br />
-          <a href="/"
-            >이벤트 전체보기<i
-              class="fa-solid fa-angle-right"
-              style="margin-left: 3px; margin-top: 1px"
-            ></i
-          ></a>
-        </div>
-        <button class="banner_nextBtn">
-          <i class="fa-solid fa-angle-right"></i>
-        </button>
-      </div>
-      <!-- EventSlide -->
-      <div class="eventSlide-container">
-        <div class="eventSlide">
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2774%2F420d6a40.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2740%2F8d7447f4.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2802%2F9f673105.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2804%2F283aa14e.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2788%2Fd9a39cae.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2669%2F22da8214.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2806%2F8949a561.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2739%2Fcd682d82.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-          <div class="eventSlide_child">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2774%2F420d6a40.jpg&w=1200&q=100"
-              alt=""
-            />
-            <div class="evenSlide_child_text" id="theLast">
-              <span>아티클</span>
-              <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="ghostLine"></div>
-      <div class="comment">채용 정보를 찾고 계셨나요?</div>
-      <!-- 채용 정보 -->
-      <div class="jobInfo">
-        <div class="jobInfo_child">
-          <i class="fa-solid fa-magnifying-glass" style="font-size: 23px"></i>
-          <a href="'/">채용공고 <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-        <div class="jobInfo_child">
-          <i class="fa-solid fa-user-tie" style="font-size: 23px"></i>
-          <a href="/">내 프로필 <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-        <div class="jobInfo_child">
-          <i class="fa-solid fa-building-user" style="font-size: 23px"></i>
-          <a href="/">매치업 <i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-        <div class="jobInfo_child" id="jobInfo_last">
-          <i class="fa-solid fa-sliders" style="font-size: 23px"></i>
-          <a href="/">
-            직군별 연봉
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
-      </div>
-      <div class="sideCard-wrap">
-        <div class="slideCard">
-          <div class="imgContainer">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fimage.wanted.co.kr%2Fuserweb%2Fcareerhome%2Fcreator-application.png&w=144&q=90"
-              alt=""
-            />
-          </div>
-          <div class="text">
-            <span> 즐겨보는</span>
-            <span>크리에이터의 글도</span>
-            <span> 추천하고 싶다면?</span>
-          </div>
-          <div class="slideCard_ghost"></div>
-          <a class="recommend">크리에이터 추천하기</a>
-          <div class="xIcon">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!-- Footer -->
-    <div class="footer-container">
-      <div class="footer">
-        <div class="footer1">
-          <div class="navLinks-container">
-            <div class="navLinks">
-              <!-- 로고,링크 등등 들어갈 자리 -->
-              <div class="navLinks_logo">
-                <img
-                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
-                  alt=""
-                  style="width: 40px; height: 40px"
-                />
-                <a href="/"
-                  ><img
-                    src="https://www.wantedlab.com/img/logo.png"
-                    alt=""
-                    class="logo_img"
-                /></a>
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
               </div>
-              <a href="">기업소개</a>
-              <a href="">이용약관</a>
-              <a href="">고객센터</a>
-              <a href="" style="font-weight: bold">개인정보 처리방침</a>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2740%2F8d7447f4.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2802%2F9f673105.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2804%2F283aa14e.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2788%2Fd9a39cae.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2669%2F22da8214.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2806%2F8949a561.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2739%2Fcd682d82.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
+            </div>
+            <div class="eventSlide_child">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fevents%2F2774%2F420d6a40.jpg&w=1200&q=100"
+                alt=""
+              />
+              <div class="evenSlide_child_text" id="theLast">
+                <span>아티클</span>
+                <div>와디즈 | 커리어와 연봉도 나만의 페르소나를 만들 것</div>
+              </div>
             </div>
           </div>
-          <div class="snsLinks">
-            <a href=""
-              ><img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_instagram.png&w=20&q=100"
-                alt="" /></a
-            ><a href=""
-              ><img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_youtube.png&w=25&q=100"
-                alt="" /></a
-            ><a href="">
-              <img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_facebook.png&w=20&q=100"
-                alt="" /></a
-            ><a href=""
-              ><img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_blog.png&w=20&q=100"
-                alt="" /></a
-            ><a href=""
-              ><img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_google.png&w=17&q=100"
-                alt="" /></a
-            ><a href=""
-              ><img
-                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_apple.png&w=17&q=100"
-                alt=""
-            /></a>
+        </div>
+        <div class="ghostLine"></div>
+        <div class="comment">채용 정보를 찾고 계셨나요?</div>
+        <!-- 채용 정보 -->
+        <div class="jobInfo">
+          <div class="jobInfo_child">
+            <i class="fa-solid fa-magnifying-glass" style="font-size: 23px"></i>
+            <a href="'/">채용공고 <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="jobInfo_child">
+            <i class="fa-solid fa-user-tie" style="font-size: 23px"></i>
+            <a href="/">내 프로필 <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="jobInfo_child">
+            <i class="fa-solid fa-building-user" style="font-size: 23px"></i>
+            <a href="/">매치업 <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+          <div class="jobInfo_child" id="jobInfo_last">
+            <i class="fa-solid fa-sliders" style="font-size: 23px"></i>
+            <a href="/">
+              직군별 연봉
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
           </div>
         </div>
-        <div class="footer2">
-          <b style="line-height: 150%; color: gray"
-            >(주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300
-            롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147 <br />
-            유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 |
-            사업자등록번호 : 299-86-00021 | 02-539-7118 <br />
-            © Wantedlab, Inc.</b
-          >
+        <div class="sideCard-wrap">
+          <div class="slideCard">
+            <div class="imgContainer">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fimage.wanted.co.kr%2Fuserweb%2Fcareerhome%2Fcreator-application.png&w=144&q=90"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <span> 즐겨보는</span>
+              <span>크리에이터의 글도</span>
+              <span> 추천하고 싶다면?</span>
+            </div>
+            <div class="slideCard_ghost"></div>
+            <a class="recommend">크리에이터 추천하기</a>
+            <div class="xIcon">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
         </div>
-        <div class="footer3"></div>
+      </main>
+      <!-- Footer -->
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer1">
+            <div class="navLinks-container">
+              <div class="navLinks">
+                <!-- 로고,링크 등등 들어갈 자리 -->
+                <div class="navLinks_logo">
+                  <img
+                    src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-public.s3.ap-northeast-2.amazonaws.com%2Fwanted_opengraph.png&w=60&q=90"
+                    alt=""
+                    style="width: 40px; height: 40px"
+                  />
+                  <a href="/"
+                    ><img
+                      src="https://www.wantedlab.com/img/logo.png"
+                      alt=""
+                      class="logo_img"
+                  /></a>
+                </div>
+                <a href="">기업소개</a>
+                <a href="">이용약관</a>
+                <a href="">고객센터</a>
+                <a href="" style="font-weight: bold">개인정보 처리방침</a>
+              </div>
+            </div>
+            <div class="snsLinks">
+              <a href=""
+                ><img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_instagram.png&w=20&q=100"
+                  alt="" /></a
+              ><a href=""
+                ><img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_youtube.png&w=25&q=100"
+                  alt="" /></a
+              ><a href="">
+                <img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_facebook.png&w=20&q=100"
+                  alt="" /></a
+              ><a href=""
+                ><img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_blog.png&w=20&q=100"
+                  alt="" /></a
+              ><a href=""
+                ><img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_google.png&w=17&q=100"
+                  alt="" /></a
+              ><a href=""
+                ><img
+                  src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_apple.png&w=17&q=100"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footer2">
+            <b style="line-height: 150%; color: gray"
+              >(주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300
+              롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147 <br />
+              유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 |
+              사업자등록번호 : 299-86-00021 | 02-539-7118 <br />
+              © Wantedlab, Inc.</b
+            >
+          </div>
+          <div class="footer3"></div>
+        </div>
+        <div></div>
       </div>
-      <div></div>
+    </section>
+    <div class="loginModal-background">
+      <div class="loginModal-container">
+        <div class="loginModal-title-container">
+          <img src="https://www.wantedlab.com/img/logo.png" alt="" />
+        </div>
+        <div class="loginModal-text-container">
+          <div class="loginModal-text one">
+            <span style="margin-bottom: 7px">직장인을 위한</span>
+            <span>커리어 플랫폼, 원티드!</span>
+          </div>
+          <div class="loginModal-text two">
+            <span style="margin-bottom: 7px"
+              >커리어 성장과 행복을 위한 여정</span
+            >
+            <span>지금 원티드에서 시작하세요.</span>
+          </div>
+        </div>
+        <div class="loginModal-email-container">
+          <div class="email-title-container">
+            <span class="email-title">이메일</span>
+          </div>
+          <input
+            class="email-input"
+            type="text"
+            placeholder="이메일을 입력해주세요."
+          />
+          <button class="email-button">
+            <i class="fa-regular fa-envelope"></i>
+            이메일로 계속하기
+          </button>
+        </div>
+        <div class="loginModal-seperate">
+          <span style="font-size: 12px">or</span>
+          <span>다음 계정으로 계속하기</span>
+        </div>
+        <div class="loginModal-social-container">
+          <div class="social-icon">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAnFBMVEX93D////86KSn92zH/4ED//O792zb92zv931H/4kD/9tT93Ub92ic1JCk3Jin//fP/+Nv+9Mz+77H+6o/+5Xf+42f+8r7+5X3954f+8Lb/+uctGyj+65v94V4vHij/88MoFSiDbTDoyT21mzaulDX01D5bSCzApTiTfDIhDSdlUi3bvTt6ZS9RPivUtjpyXS+ljDRFNCqdhDPJrTkAB+IDAAAEJ0lEQVRogb2a17qqMBBGI70INsSCIqDY9Vje/91OArgVJZOomP9qX2xZ37RkJglqCBDi/cdWu9PteX3DsG3D6Hu9bqfdqhWiWpO+gWRZ0/+kyTIy+hNLrQei+gODfB69iKCMgc/msCDW0MaEV8AfSJPR0PoK4k+bEOHGaU79jyEjW2YSCo5sjz6CzAxeRI4xZm9Dxt47iBzjjd+DdG3tPQSRZnffgKiDd824GTOozOcqSPsTM27GtPkgfvMjMwpjmhXZ/AqZND9HEDUnbEhP/o6BkNxjQb5nVFBQ/YxXShkyqYWBKRM6xP8y5neVc+wR0q6NgSlWNUS1v6iPZ+m2WgkZfFznVdIGVZBuTUG/Se6+QsZ1OotIt8cvEK9WZxFp3jNkVrOziOTZE8So2VlEulGGjH5gCDZlVILUHfVcuv0I8fkMUUzl5S9Qsv8AmXIYopjmbn7Zb5eHw3a/XhwRB0ef3iEWe9Ey0TUON0HoOK7rOk4YRNG/VWqyfpYvYRlkyKoRMz2dg1AqywmkdcLAaMMbREWwtxQ0Pweu9Co3lC4p6DQdqQWEEXYl+RdVITJMsDyClCz0iLn8Ksfzs6NKTnMWkMuyxRhDVLDazVXoAAxsTHQBKLqhZhAL8pZ5rYxGSdEJoMhWBpkA3lKSkMmQpM2VHhdtkkH6gLeUJeyrwmNSSv2C3ieQFhASZR5xMCQpWFNN0Y0WhrTpdiD7wOEsojChf6SNIR163JUVnyHEFGrs5Q6GQA3EniciRO6SGhXcUKBGj55c6ZnTW9hfO9pHtB6GePS4J7zewrWyooVe9zCEnsHKlR8SUMse5zACWgj+uGN3USOP24naIHRLCAToIXYbfndR12LcTYCQhDeDceCp20oGAVaVdMtdJ2dqyTNigsxLwAlx9sDiBabwG4VCL5M8hYFiRCiGdt4HQ+irSl6MwLKCTeHLr82Vvjdmywo4YZkLHocFMdCxZAsksNQTSsyOfbiEuqJsqYc2LaI9ixIegB0L5ZsWtP0SpTHcrwTbBDIk337BHM50AjovN4wZjWqf2RJlMnfUrT6Q6AWSq2iJwOYuk2JWbpFOFFyY00PR3MFtaqbkuSZdNww22wV7QLm1qezzDnNRZJgTBJuISFrGpwRxjHS3hptjYsy95UbLY7K7rq7HJEkVphGZ/kYH1hBUlD2ZeEykEHF9n+g+BDHGOSVxsSGhE7NmtwrdxznWYLp1nChkjoeVehhM4RE73myWc3YeVelxxIZCb16k9Q59hHg6LAC7ifSNQJdVPvYQc4Aj5ChKzKGakONBMQedQo5sxRw+izlG5zlb4xbtQkDM1YaYSxox101iLs7EXAGKucwUcy0r5oJZzFV5Q8ilf0PM84WGkIcYRAKelBAJeBxDZA3Rr5/5EAl4sJRzfv70qtDPH5F9q/9w0E/uFyO+0AAAAABJRU5ErkJggg=="
+              alt=""
+            />
+            <span>kakao</span>
+          </div>
+          <div class="social-icon">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <span>Facebook</span>
+          </div>
+          <div class="social-icon">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <span>Google</span>
+          </div>
+          <div class="social-icon">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <span>Apple</span>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

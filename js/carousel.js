@@ -14,11 +14,7 @@ function carousel() {
 
   $slides.style.left = 222 + "px" // 최초에 가운데에 정렬된 것 처럼 보이게
 
-  // var target = document.getElementById("top")
 
-  // var targetTop = target.getBoundingClientRect().top
-
-  // var abTop = window.pageYOffset + target.getBoundingClientRect().left
   isCenter()
   makeClone()
 

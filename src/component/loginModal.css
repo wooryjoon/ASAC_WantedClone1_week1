@@ -1,0 +1,130 @@
+.loginModal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  visibility: hidden;
+}
+.loginModal-background.show {
+  visibility: visible;
+}
+.loginModal-container {
+  z-index: 999;
+  width: 300px;
+  height: 500px;
+  position: fixed;
+  left: 50%;
+  top: 110px;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+}
+
+.loginModal-title-container {
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.loginModal-title-container img {
+  width: 70px;
+  height: 15px;
+  object-fit: cover;
+}
+.loginModal-text-container {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+.loginModal-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.loginModal-text.two {
+  font-size: 12px;
+  color: gray;
+}
+.loginModal-email-container {
+  width: 90%;
+  height: 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.email-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: gray;
+  font-size: 12px;
+}
+.email-input {
+  width: 95%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #3466ff;
+}
+.email-button {
+  width: 100%;
+  height: 40px;
+  background-color: #3466ff;
+  border-radius: 20px;
+  color: white;
+}
+.loginModal-seperate {
+  height: 30px;
+  font-size: 13px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.loginModal-social-container {
+  width: 90%;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.loginModal-social-container .social-icon {
+  width: 20%;
+  height: 90%;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social-icon img {
+  width: 40px;
+  height: 75%;
+
+  object-fit: cover;
+  text-align: center;
+}
+.social-icon span {
+  font-size: 11px;
+}

@@ -87,7 +87,9 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.option_wrap1 button {
+  font-weight: bold;
+}
 .option_wrap2 {
   padding: 0 10px;
   height: 100%;

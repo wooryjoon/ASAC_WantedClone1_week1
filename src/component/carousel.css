@@ -5,6 +5,7 @@
   display: flex;
   overflow: hidden;
   scroll-behavior: smooth;
+
 }
 
 .slides {
@@ -95,3 +96,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+/* .slide_container {
+  width: 100%;
+  position: relative;
+  height: 600px;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+} */
