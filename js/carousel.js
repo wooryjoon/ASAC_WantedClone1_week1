@@ -12,9 +12,6 @@ function carousel() {
   let $nextBtn = document.querySelector(".carousel_nextBtn")
   let timer = undefined
 
-  $slides.style.left = 222 + "px" // 최초에 가운데에 정렬된 것 처럼 보이게
-
-
   isCenter()
   makeClone()
 

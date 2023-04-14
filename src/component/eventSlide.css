@@ -4,11 +4,13 @@
   height: 450px;
   margin: 10px auto;
   overflow: hidden;
+  display: flex;
 }
 .eventSlide {
   position: absolute;
   display: flex;
   transition: all 0.4s;
+  flex-shrink: 0;
 }
 .eventSlide_child {
   width: 520px;

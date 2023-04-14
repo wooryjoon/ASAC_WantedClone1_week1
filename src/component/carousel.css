@@ -1,11 +1,11 @@
 .slide-wrapper {
+  width: 100%;
   margin: 90px 0;
   position: relative;
   height: 300px;
   display: flex;
   overflow: hidden;
   scroll-behavior: smooth;
-
 }
 
 .slides {
