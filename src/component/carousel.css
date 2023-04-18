@@ -19,6 +19,7 @@
 .slides.animated {
   transition: 0.7s ease-in-out;
 }
+/* 여기부터는 탑배너카드 파일에 넣을겁니다. */
 .slide {
   width: 1080px;
   height: 300px;
@@ -70,6 +71,8 @@
   padding-left: 8px;
 }
 
+
+/* 여기까지 완료. */
 .carousel_prevBtn {
   width: 28px;
   height: 60px;
